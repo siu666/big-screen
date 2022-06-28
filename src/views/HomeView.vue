@@ -1,7 +1,9 @@
 <template>
   <div class="outer">
    
-    <adaptWrap>123</adaptWrap>
+    <adaptWrap>
+      <p class="text">123</p>
+    </adaptWrap>
   </div>
 </template>
 
@@ -20,8 +22,12 @@ export default class HomeView extends Vue {}
 </script>
 <style lang="less" scoped>
 .outer{
-  width: 100%;
+  width: 100vw;
+  min-height: 100%;
+  max-height: 100vh;
   overflow: hidden;
-  height: 100vh;
+  .text{
+    font-size: 16px;
+  }
 }
 </style>
